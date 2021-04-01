@@ -38,7 +38,7 @@ const trySTO = async () => {
 const trySTO2 = async () => {
   for (let i = 0; i < 5; i++) {
     await new Promise((resolve, reject) => {
-      setTimeout(() => resolve(), 500)
+      setTimeout(() => resolve(), 0)
     })
     await new Promise((resolve, reject) => {
       printAfter(i, DELAY)
